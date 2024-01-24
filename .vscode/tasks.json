@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "bun run dev",
+      "type": "shell",
+      "command": "bun run dev",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "dependsOn": [
+        "bun install"
+      ],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "bun install",
+      "type": "shell",
+      "command": "bun run install_if_needed",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    }
+  ]
+}
